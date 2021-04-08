@@ -1,0 +1,20 @@
+[package]
+name = "invoice-power-set-sum"
+version = "0.1.0"
+authors = ["Impartiall <42242696+Impartiall@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "invoice_power_set_sum"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/bin/main.rs"
+
+[dependencies]
+csv = "1.1"
+itertools = "0.7.6"
+serde = { version = "1", features = ["derive"] }
